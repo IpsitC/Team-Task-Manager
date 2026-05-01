@@ -32,8 +32,8 @@ const ProjectsPage = () => {
 
   return (
     <PageWrapper>
-      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-5 shadow-card">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-6 shadow-card">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">Projects</p>
             <h1 className="mt-2 text-3xl font-extrabold text-slate-950">Workspace projects</h1>
@@ -59,7 +59,7 @@ const ProjectsPage = () => {
               <Badge className="border-blue-200 bg-blue-50 text-blue-700">{myProjects.length} joined</Badge>
             </div>
             {myProjects.length > 0 ? (
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
                 {myProjects.map((project) => (
                   <ProjectCard key={project._id} project={project} onJoin={joinProject} onLeave={leaveProject} />
                 ))}
@@ -81,7 +81,7 @@ const ProjectsPage = () => {
               <Badge className="border-slate-200 bg-slate-50 text-slate-600">{availableProjects.length} open</Badge>
             </div>
             {availableProjects.length > 0 ? (
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
                 {availableProjects.map((project) => (
                   <ProjectCard key={project._id} project={project} onJoin={joinProject} onLeave={leaveProject} />
                 ))}

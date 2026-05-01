@@ -116,15 +116,18 @@ const ProjectDetailPage = () => {
 
   return (
     <PageWrapper>
-      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-5 shadow-card">
+      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-6 shadow-card">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <div className="mb-3 flex flex-wrap items-center gap-2">
+            <div className="mb-1">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">Project Space</p>
+            </div>
+            <h1 className="mt-2 text-3xl font-extrabold text-slate-950">{project.name}</h1>
+            <p className="mt-2 max-w-3xl text-slate-500">{project.description || 'No project description yet.'}</p>
+            <div className="mt-4 flex flex-wrap items-center gap-2">
               <span className="rounded-md bg-blue-50 px-2 py-1 text-xs font-bold uppercase tracking-wide text-blue-700">{currentUserRole}</span>
               <span className="text-sm font-semibold text-slate-400">{liveProgress}% complete</span>
             </div>
-            <h1 className="text-3xl font-extrabold text-slate-950">{project.name}</h1>
-            <p className="mt-2 max-w-3xl text-slate-500">{project.description || 'No project description yet.'}</p>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex -space-x-2">

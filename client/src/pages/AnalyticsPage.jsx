@@ -29,12 +29,17 @@ const AnalyticsPage = () => {
 
   return (
     <PageWrapper>
-      <div className="mb-6">
-        <h1 className="text-3xl font-extrabold text-slate-950">Analytics</h1>
-        <p className="mt-2 text-slate-500">A reporting view for completion, workload distribution, and project risk.</p>
+      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-6 shadow-card">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">Reports</p>
+            <h1 className="mt-2 text-3xl font-extrabold text-slate-950">Analytics</h1>
+            <p className="mt-2 max-w-2xl text-slate-500">A reporting view for completion, workload distribution, and project risk.</p>
+          </div>
+        </div>
       </div>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {metrics.map(({ key, label, icon: Icon, tone }) => (
           <div key={key} className="rounded-xl border border-slate-200 bg-white p-5 shadow-card">
             <div className="flex items-center justify-between">
@@ -46,7 +51,7 @@ const AnalyticsPage = () => {
         ))}
       </section>
 
-      <section className="mt-6 grid gap-4 md:grid-cols-3">
+      <section className="mt-6 grid gap-6 md:grid-cols-3">
         <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-card">
           <div className="flex items-center justify-between">
             <p className="text-sm font-semibold text-slate-500">Completion rate</p>

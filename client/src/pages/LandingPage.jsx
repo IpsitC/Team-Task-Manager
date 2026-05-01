@@ -104,7 +104,7 @@ const demoColumns = [
 
 const LandingPage = () => {
   const { isAuthenticated } = useAuth();
-  const [activeStep, setActiveStep] = useState(2);
+  const [activeStep, setActiveStep] = useState(0);
   const selectedStep = workflowSteps[activeStep];
 
   if (isAuthenticated) return <Navigate to="/dashboard" replace />;
@@ -151,18 +151,6 @@ const LandingPage = () => {
                   Login
                 </Button>
               </Link>
-            </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {[
-                ['12', 'seeded demo tasks'],
-                ['4', 'project spaces'],
-                ['6', 'team accounts']
-              ].map(([value, label]) => (
-                <div key={label} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <p className="text-2xl font-extrabold text-slate-950">{value}</p>
-                  <p className="mt-1 text-xs font-bold uppercase tracking-wide text-slate-400">{label}</p>
-                </div>
-              ))}
             </div>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-card">
@@ -301,27 +289,6 @@ const LandingPage = () => {
                 <p className="mt-2 text-sm leading-6 text-slate-500">{body}</p>
               </div>
             ))}
-          </div>
-        </section>
-        <section className="bg-white pb-16">
-          <div className="mx-auto max-w-7xl px-4 md:px-6">
-            <div className="rounded-xl border border-slate-200 bg-slate-950 p-6 text-white shadow-card md:p-8">
-              <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-                <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-300">Demo-ready</p>
-                  <h2 className="mt-2 text-3xl font-extrabold">Explore the seeded workspace</h2>
-                  <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">
-                    Use the included admin account to review projects, assigned teammates, board movement, filters, and analytics.
-                  </p>
-                </div>
-                <Link to="/signup">
-                  <Button className="w-full sm:w-auto">
-                    Open TaskFlow
-                    <ArrowRight size={16} />
-                  </Button>
-                </Link>
-              </div>
-            </div>
           </div>
         </section>
       </main>

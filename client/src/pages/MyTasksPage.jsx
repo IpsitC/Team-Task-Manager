@@ -21,8 +21,8 @@ const MyTasksPage = () => {
 
   return (
     <PageWrapper>
-      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-5 shadow-card">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-6 shadow-card">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-600">My tasks</p>
             <h1 className="mt-2 text-3xl font-extrabold text-slate-950">Assigned to you</h1>
@@ -40,12 +40,12 @@ const MyTasksPage = () => {
       {loading ? (
         <Spinner label="Loading your tasks" />
       ) : sortedTasks.length > 0 ? (
-        <div className="grid gap-3 xl:grid-cols-2">
+        <div className="grid gap-6 xl:grid-cols-2">
           {sortedTasks.map((task) => (
             <Link
               key={task._id}
               to={`/projects/${task.projectId?._id || task.projectId}`}
-              className="rounded-xl border border-slate-200 bg-white p-4 shadow-card transition hover:border-blue-200 hover:bg-blue-50/40"
+              className="rounded-xl border border-slate-200 bg-white p-5 shadow-card transition hover:-translate-y-0.5 hover:border-blue-200"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="min-w-0">
