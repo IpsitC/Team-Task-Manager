@@ -4,16 +4,7 @@
   <img src="docs/screenshots/landing_page.png" alt="TaskFlow Landing Page" width="100%"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react" alt="React"/>
-  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=node.js" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=flat-square&logo=mongodb" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/Auth-JWT-000000?style=flat-square&logo=jsonwebtokens" alt="JWT"/>
-  <img src="https://img.shields.io/badge/Drag%20%26%20Drop-dnd--kit-FF6B6B?style=flat-square" alt="dnd-kit"/>
-  <img src="https://img.shields.io/badge/Charts-Recharts-8884d8?style=flat-square" alt="Recharts"/>
-</p>
-
-> A full-stack collaborative task management platform with JWT auth, role-based access control, kanban boards, analytics, and a live activity feed.
+> A full-stack collaborative team task management platform with JWT auth, role-based access control, kanban boards, analytics, and a live activity feed.
 
 ---
 
@@ -84,10 +75,6 @@
 - **Workload by user** bar chart showing assignment load
 - Completion rate and overdue rate KPIs
 - Busiest team member highlight
-
-### 🕐 Activity Feed
-- Real-time log of task creates, updates, status changes, and member events
-- Per-project activity visible to all project members
 
 ### 🖥️ UI & UX
 - Responsive SaaS-style design with sidebar navigation
@@ -330,7 +317,3 @@ VITE_API_BASE_URL=https://your-server.up.railway.app/api
 | `npm start` | Start the server in production mode |
 
 ---
-
-## 📄 License
-
-MIT
