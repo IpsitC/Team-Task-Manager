@@ -4,7 +4,15 @@
   <img src="docs/screenshots/landing_page.png" alt="TaskFlow Landing Page" width="100%"/>
 </p>
 
+<p align="center">
+  <a href="https://ttaskmanager.up.railway.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Demo-ttaskmanager.up.railway.app-2563EB?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
+
 > A full-stack collaborative team task management platform with JWT auth, role-based access control, kanban boards, analytics, and a live activity feed.
+>
+> 🌐 **Live:** [ttaskmanager.up.railway.app](https://ttaskmanager.up.railway.app/)
 
 ---
 
