@@ -224,13 +224,14 @@ npm run seed
 
 All seeded accounts use password: **`Password123!`**
 
-| Email | Role |
-|---|---|
-| `avery.admin@taskflow.demo` | Admin |
-| `maya.chen@taskflow.demo` | Member |
-| `noah.patel@taskflow.demo` | Member |
-| `lina.brooks@taskflow.demo` | Member |
-| `omar.reyes@taskflow.demo` | Member |
+| Name | Email | Designation | Role |
+|---|---|---|---|
+| Rajesh Kumar | `rajesh.kumar@taskflow.demo` | Engineering Manager | Admin (all projects) |
+| Priya Nair | `priya.nair@taskflow.demo` | Product Manager | Member |
+| Arjun Mehta | `arjun.mehta@taskflow.demo` | Senior Backend Engineer | Member |
+| Neha Sharma | `neha.sharma@taskflow.demo` | Frontend Engineer | Member |
+| Vikram Singh | `vikram.singh@taskflow.demo` | QA Analyst | Member |
+| Ananya Rao | `ananya.rao@taskflow.demo` | UI/UX Designer | Member |
 
 > The seed script is **idempotent** — re-running it safely replaces only the demo data without affecting user-created content.
 
